@@ -1,0 +1,19 @@
+.selector {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.selector .child {
+  background: url('#') no-repeat 0 0;
+  color: red;
+}
+main {
+  font-size: 20px;
+  margin-top: 99px;
+}
+your_mom {
+  display: block;
+}
+your_mom moms-child {
+  padding: 25px;
+}
