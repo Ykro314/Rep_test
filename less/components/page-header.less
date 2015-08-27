@@ -1,0 +1,90 @@
+.page-header {
+//    background: url("/pink/img/main-bg-1.png") no-repeat 0 0 #1d2631;
+    background-image: 
+        url("/pink/img/main-bg_second-layer24.png"),
+        url("/pink/img/main-bg-1.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: 50% 173px, 50% 0;
+    background-color: #1d2631;
+    color: @color-header;
+    
+    &__menu {
+        padding: 15px 0;
+        background: 
+            url("/pink/img/main-top_bg_opacity.png") no-repeat 50% 0;
+    }
+        a {
+            display: block;
+        }
+        .logo {
+            float:left;
+            font-size: 32px;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+        .logo~a {
+            float:right;
+            width: 50px;
+            height: 4px;
+            background-color: white;
+            position: relative;
+            margin-top: 3px;
+        }
+        .logo~a:after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: white;
+            position: absolute;
+            top:10px; 
+        }
+        .logo~a:before {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: white;
+            position: absolute;
+            top:20px; 
+        }
+    
+    .title {
+        text-align: center;
+        font-size: @font-size-label;
+        line-height: 30px;
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 365px;
+        min-height:60px;
+    }
+    
+    .btn {
+        text-align: center;
+        font-size: @font-size-h2;
+        line-height: 18px;
+        font-weight: bold;
+        display: block;
+        padding: 15px 35px;
+        border: 3px solid white;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+    .support {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .support img {
+        margin-right: 35px;
+    }
+    .support img:last-child {
+        margin-right: 0;
+    }
+    
+    p {
+        font-size: @font-size-p;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+}
+

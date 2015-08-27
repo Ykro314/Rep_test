@@ -3,111 +3,124 @@
     <head>
         <meta charset="utf-8">
         <title>Pink-App</title>
+        <link rel=stylesheet href='/pink/css/style.css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         
     </head>
     
     <body>
        
        <header class="page-header">
-           <div class="page-header__menu">
-               <a href="#" class="logo">Pink</a>
-               <a href="#">--</a>
-           </div>
-           <div class="page-header__introduction">
-               <div class="title">Взгляните на жизнь иначе!</div>
-               <div class="layer"></div>
-           </div>
-           <div class="page-header__download">
-               <a href="#" class="btn">Скачать приложение</a>
-               <div class="support">
-                   <img src="#" alt="#">
-                   <img src="#" alt="#">
-                   <img src="#" alt="#">
+               <div class="page-header__menu clearfix">
+                   <div class='inner'>
+                       <a href="#" class="logo">Pink</a>
+                       <a href="#"></a>
+                   </div>
                </div>
-               <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
-            </div>
-            <!--
-            <nav class='mobile-menu'>
-                <ul class='mobile-menu__list'>
-                    <li>
-                        <a href="#">Pink</a>
-                        <a href="#">esc</a> 
-                    </li>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Возможности</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Стоимость</a></li>
-                </ul>
-            </nav>    
-            -->
+               <div class="page-header__introduction">
+                   <div class='inner'>
+                       <div class="title">Взгляните на жизнь иначе!</div>
+                   </div>
+               </div>
+               <div class="page-header__download">
+                   <div class='inner'>
+                       <a href="#" class="btn">Скачать приложение</a>
+                       <div class="support">
+                           <img src="/pink/img/apple-logo.svg" alt="#">
+                           <img src="/pink/img/android-logo.svg" alt="#">
+                           <img src="/pink/img/microsoft-logo.svg" alt="#">
+                       </div>
+                       <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+                   </div>
+                </div>
+                <!--
+                <nav class='mobile-menu'>
+                   <div class='inner'>
+                        <ul class='mobile-menu__list'>
+                            <li>
+                                <a href="#">Pink</a>
+                                <a href="#">esc</a> 
+                            </li>
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">Возможности</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Стоимость</a></li>
+                        </ul>
+                    </div>
+                </nav>    
+                -->
        </header>
        
        
        
        <main>
-           <p>Устали от серости мегаполиса?</p>
-           <p>Нам есть что вам предложить!</p>
-           <section class="features">
-               <h2 class="features__title">Поднимает настроение</h2>
-               <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-               <h2 class="features__title">Меняет мир вокруг</h2>
-               <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-               <h2 class="features__title">Заводит новых друзей</h2>
-               <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-               <img class="features__img" src="#" alt="#">
-           </section>
-           
-           <article class='reviews'>
-               <div class="reviews__slide">
-                   <h2 class="reviews__title">Николай Петров</h2>
-                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-               </div>
-               <div class="pagination">
-                   <a href="#" class="pagination__control"></a>
-                   <a href="#" class="pagination__control"></a>
-                   <a href="#" class="pagination__control"></a>
-               </div>
-           </article>
-           
-           <div class="box-content">
-               <table class="box-content__table">
-                   <tr class="box-content__row-1">
-                       <th>1</th>
-                       <th>Стандарт</th>
-                       <th>3</th>
-                   </tr>
-                   <tr class="box-content__row-2">
-                       <td>2,1</td>
-                       <td>Розовый фильтр</td>
-                       <td>2,3</td>
-                   </tr>
-                   <tr class="box-content__row-3">
-                       <td>2,1</td>
-                       <td>Смайлики</td>
-                       <td>2,1</td>
-                   </tr>
-                   <tr class="box-content__row-4">
-                       <td>2,1</td>
-                       <td>Комментарии</td>
-                       <td>2,1</td>
-                   </tr>
-               </table>
-               <div class='move-table  pagination'>
-                   <a href="#" class="pagination__control"></a>
-                   <a href="#" class="pagination__control"></a>
-                   <a href="#" class="pagination__control"></a>
-               </div>
+           <div class='inner'>
+               <p>Устали от серости мегаполиса?</p>
+               <p>Нам есть что вам предложить!</p>
+               <section class="features">
+                   <h2 class="features__title">Поднимает настроение</h2>
+                   <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                   <h2 class="features__title">Меняет мир вокруг</h2>
+                   <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                   <h2 class="features__title">Заводит новых друзей</h2>
+                   <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                   <img class="features__img" src="/pink/pict/main-iphone-smile.png" alt="#">
+               </section>
+
+               <article class='reviews'>
+                   <div class="reviews__slide">
+                       <h2 class="reviews__title">Николай Петров</h2>
+                       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                   </div>
+                   <div class="pagination">
+                       <a href="#" class="pagination__control active"></a>
+                       <a href="#" class="pagination__control"></a>
+                       <a href="#" class="pagination__control "></a>
+                   </div>
+               </article>
+
+               <div class="box-content">
+                   <table class="box-content__table">
+                       <tr class="box-content__row-1">
+                           <th>1</th>
+                           <th class="box-content__th--top">Стандарт<br><span> 3.99 USD</span></th>
+                           <th>3</th>
+                       </tr>
+                       <tr class="box-content__row-2">
+                           <td>2,1</td>
+                           <td>Розовый фильтр</td>
+                           <td>2,3</td>
+                       </tr>
+                       <tr class="box-content__row-3">
+                           <td>2,1</td>
+                           <td>Смайлики</td>
+                           <td>2,1</td>
+                       </tr>
+                       <tr class="box-content__row-4">
+                           <td>2,1</td>
+                           <td class='box-content__td--no-exist'>Комментарии</td>
+                           <td>2,1</td>
+                       </tr>
+                   </table>
+                   <div class='move-table  pagination'>
+                       <a href="#" class="pagination__control"></a>
+                       <a href="#" class="pagination__control active"></a>
+                       <a href="#" class="pagination__control"></a>
+                   </div>
+               </div> 
            </div>
        </main>
        
        
        
        <footer class="page-footer">
-           <p class="page-footer__contact">Остались вопросы? Свяжитесь с нами.</p>
-           <p class="page-footer__telephone">Звоните:<a href="#">0 800 500 300</a></p>
-           <p class="page-footer__email">Пишите:<a href="#">lolkokpol@gmail.com</a></p>
-           <p class="page-footer__adress">Приезжайте в гости:<a href="#">Санкт-Петербург ул.Невский проспект Д20</a></p>
-           <div class="page-footer__map"></div>
+           <div class='inner'>
+               <p class="page-footer__contact">Остались вопросы? Свяжитесь с нами.</p>
+               <p class="page-footer__telephone">Звоните:<a href="#">0 800 500 300</a></p>
+               <p class="page-footer__email">Пишите:<a href="#">lolkokpol@gmail.com</a></p>
+               <p class="page-footer__adress">Приезжайте в гости:<a href="#">Санкт-Петербург ул.Невский проспект Д20</a></p>
+               <img src="/pink/img/images/footer-map-sliced.jpg" alt="">
+           </div>
        </footer>
         
     </body>
