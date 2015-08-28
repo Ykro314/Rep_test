@@ -1,17 +1,20 @@
 .page-header {
-//    background: url("/pink/img/main-bg-1.png") no-repeat 0 0 #1d2631;
-    background-image: 
-        url("/pink/img/main-bg_second-layer24.png"),
-        url("/pink/img/main-bg-1.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: 50% 173px, 50% 0;
+//    background-image: 
+//        url("/pink/img/main-bg_second-layer24.png"),
+//        url("/pink/img/main-bg-1.png");
+//    background-repeat: no-repeat no-repeat;
+//    background-position: 50% 173px, 50% 0;
+    background-image: url('/pink/img/main-bg-all-700.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
     background-color: #1d2631;
     color: @color-header;
+    padding-bottom: 100px;
     
     &__menu {
-        padding: 15px 0;
+        padding: 40px 0;
         background: 
-            url("/pink/img/main-top_bg_opacity.png") no-repeat 50% 0;
+            url("/pink/img/main-top_bg700_opacity.png") no-repeat 50% 0;
     }
         a {
             display: block;
@@ -19,8 +22,10 @@
         .logo {
             float:left;
             font-size: 32px;
-            line-height: 32px;
+            line-height: 40px;
             text-transform: uppercase;
+            padding-left: 65px;
+            background: url("/pink/img/glasses-simple@1x.png") no-repeat 0 0;
         }
         .logo~a {
             float:right;
@@ -47,14 +52,22 @@
             top:20px; 
         }
     
+//    &__left-column{ /* це мало бути в гріді */
+//        width: 310px;
+//        margin-top: 90px;
+//    }
     .title {
+        padding: 0 35px; /* 35 */
         text-align: center;
-        font-size: @font-size-label;
-        line-height: 30px;
+        font-size: @font-size-700;
+        line-height: @line-height-700;
+//        font-size: @font-size-label;
+//        line-height: 30px;
         font-weight: 300;
         margin-top: 20px;
-        margin-bottom: 365px;
-        min-height:60px;
+        margin-bottom: 30px;
+//        margin-bottom: 365px;
+        min-height: 60px;
     }
     
     .btn {
@@ -82,9 +95,9 @@
     p {
         font-size: @font-size-p;
         font-weight: 300;
-        line-height: 24px;
+        line-height: @line-height-st;
         text-align: center;
-        padding-bottom: 35px;
+//        padding-bottom: 35px;
     }
 }
 

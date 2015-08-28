@@ -1,0 +1,127 @@
+@media (max-width: 320px) {
+    
+    .page-header {
+        background-image: 
+            url("/pink/img/main-bg_second-layer24.png"),
+            url("/pink/img/main-bg-1.png");
+        background-repeat: no-repeat no-repeat;
+        background-position: 50% 173px, 50% 0;
+        padding-bottom: 25px;
+        &__menu {
+        padding: 15px 0;
+        background:
+            url("/pink/img/main-top_bg_opacity.png") no-repeat 50% 0;
+        }
+         .logo {
+            padding-left: 0px;
+             background: none;
+            }
+        &__left-column{
+            width: auto;
+            margin-top: 0;
+            .title {
+                font-size: @font-size-label;
+                line-height: 30px;
+                margin-bottom: 365px;
+                padding: 0;
+            }
+        }
+    }
+    
+    
+    main {
+        .inner>p:first-child,
+        .inner>p:nth-child(2){
+            font-size: @font-size-label;
+            line-height: @line-height-h2;
+            margin-bottom: 35px; 
+        }
+    }
+    
+    .features {
+        text-align: center;
+        margin-top: 80px;
+        &__right-column {
+            float: none;
+            width: auto;
+            margin-top: 0;
+        }
+        &__left-column {
+            width: auto;
+            float: none;
+            height: 280px;
+            overflow: hidden;
+            .features__img_1 {
+                display: none;
+            }
+            .features__img_2 {
+                display: inline;   
+            }
+        }
+    }
+    
+    .effect {
+        display: none;
+    }
+    
+    .reviews {
+        &__title {
+            small {
+                display: none;
+            }
+        }
+    }
+    .box-content {
+       /*  overflow: hidden; можливо треба додати в боді, можливо і зовсім не потрібно. Все одно за вьюпорт не вилізе, а слайдер буде працювати за рахунок переміщення position:relative */
+        &__table {
+            width: 860px;
+            position: relative;
+            left:-330px;
+            th {
+                width: 276px;
+            }
+            th:first-child {
+                display: none;
+            }
+            td {
+                text-transform: uppercase;
+                padding: 18px 20px;
+                background: url('/pink/img/main-icon-yes.png') no-repeat 90% 50% white;  
+                span {
+                    display: inline;
+                }
+            }
+            td:first-child {
+            display: none;
+            }
+            .box-content__td--no-exist {
+            background: url('/pink/img/main-icon-no.png') no-repeat 90% 50% white;
+            }
+        }
+        .pagination {
+        display: block;
+        }
+    }
+    
+    .page-footer {
+        &__contact {
+        font-size: @font-size-label;
+        line-height: @line-height-h2;
+        }
+        &__telephone,
+        &__email,
+        &__adress{
+            display: block;
+            width: 100%;
+        }
+        img:nth-of-type(1) {
+            display: none;
+        }
+        img:nth-of-type(2) {
+            display: block;
+        }
+        .social {
+            display: none;
+        }
+    }
+}

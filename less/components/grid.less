@@ -9,15 +9,52 @@ body {
 }
 
 .inner {
-    max-width: 700px;
+    max-width: 660px;
     margin: 0 auto;
     padding: 0 20px;
+/*     border: 1px solid red; */
 }
+
 main {
     padding: 45px 0;
     padding-bottom: 0;
 }
 
-@media (max-width: 300px) {
+.page-header {
+    padding-bottom: 35px;
+    &__left-column {
+        width: 310px;
+        margin-top: 90px;
+    }
+}
 
+.features {
+    margin-bottom: 100px;
+    &__right-column {
+        float: right;
+        width: 350px;
+        margin-top: 70px;
+    }
+    &__left-column {
+        float: left;
+        height: 480px;
+        overflow: hidden;
+    }
+}
+
+.effect {
+    &__left-column {
+        float: left;
+    }
+    &__right-column {
+        float:right;
+        width: 310px;
+    }
+}
+
+.page-footer {
+    &__telephone,
+    &__email {
+        display: inline-block;
+    }
 }

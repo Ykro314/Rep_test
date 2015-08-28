@@ -1,21 +1,28 @@
 .page-footer {
     text-align: center;
     &__contact{
-        font-size: @font-size-label;
-        line-height: @line-height-h2;
-        font-weight: @font-light; 
+        font-size: @font-size-700;
+        line-height: @line-height-700;
+        font-weight: @font-light;
         margin-bottom: 40px;
     }
     &__telephone,
     &__email,
     &__adress{
+        width: 30%;
         margin-bottom: 30px;
         font-size: @font-size-h2;
         line-height: @line-height-st;
         font-weight: @font-bold;
+        vertical-align: top;
     }
     &__adress{
+        width: 40%;
+        margin: 0 auto;
         margin-bottom: 40px;
+    }
+    &__telephone {
+        margin-right: 14.2%;
     }
     a {
         color: @color-footer;
@@ -26,5 +33,62 @@
     }
     img {
         margin-left: -20px;
+    }
+    img:nth-of-type(2) {
+        display: none;
+    }
+    
+    .social {
+        padding: 50px 0;
+        &__logo {
+            display: block;
+            float: left;
+            width: 145px;
+            height: 40px;
+            background: url("/pink/img/Pink-logo-footer-2@1x.png") no-repeat 0 0;
+            margin-left: 20px;
+            margin-right: 70px;
+        }
+        &__buttons {
+            float:left;
+            margin-right: 30px;
+            a {
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                border: 3px solid  #e9ebec;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+            a:hover {
+                border-color: @bg-darkblue;
+            }
+            .social_buttons--tw{
+                background: url("/pink/img/footer-social-icon-tw.png") no-repeat 50% 50%;
+            }
+            .social_buttons--fb{
+                background: url("/pink/img/footer-social-icon-fb.png") no-repeat 50% 50%;
+            }
+            .social_buttons--play{
+                background: url("/pink/img/footer-social-icon-play.png") no-repeat 50% 50%;
+            }
+        }
+        &__developers {
+            float:left;
+            a {
+                display: inline-block;
+                line-height: 50px;
+                font-size: @font-size-p;
+                color: @bg-darkblue;
+                padding-right: 40px;
+                margin-right: 10px;
+            }
+            .social__developers--aa {
+                background: url("/pink/img/glukhanko.svg") no-repeat 95% 50%;
+            }
+            .social__developers--htmlacademy {
+                background: url("/pink/img/htmlacademy.svg") no-repeat 95% 50%;
+            }
+        }
     }
 }

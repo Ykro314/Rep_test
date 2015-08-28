@@ -17,20 +17,20 @@
                        <a href="#"></a>
                    </div>
                </div>
-               <div class="page-header__introduction">
-                   <div class='inner'>
-                       <div class="title">Взгляните на жизнь иначе!</div>
-                   </div>
-               </div>
-               <div class="page-header__download">
-                   <div class='inner'>
-                       <a href="#" class="btn">Скачать приложение</a>
-                       <div class="support">
-                           <img src="/pink/img/apple-logo.svg" alt="#">
-                           <img src="/pink/img/android-logo.svg" alt="#">
-                           <img src="/pink/img/microsoft-logo.svg" alt="#">
+               <div class="inner">
+                   <div class="page-header__left-column">
+                       <div class="page-header__introduction">
+                           <div class="title">Взгляните на жизнь иначе!</div>
                        </div>
-                       <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+                       <div class="page-header__download">
+                           <a href="#" class="btn">Скачать приложение</a>
+                           <div class="support">
+                               <img src="/pink/img/apple-logo.svg" alt="#">
+                               <img src="/pink/img/android-logo.svg" alt="#">
+                               <img src="/pink/img/microsoft-logo.svg" alt="#">
+                           </div>
+                           <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+                       </div>
                    </div>
                 </div>
                 <!--
@@ -57,19 +57,36 @@
            <div class='inner'>
                <p>Устали от серости мегаполиса?</p>
                <p>Нам есть что вам предложить!</p>
-               <section class="features">
-                   <h2 class="features__title">Поднимает настроение</h2>
-                   <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-                   <h2 class="features__title">Меняет мир вокруг</h2>
-                   <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                   <h2 class="features__title">Заводит новых друзей</h2>
-                   <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-                   <img class="features__img" src="/pink/pict/main-iphone-smile.png" alt="#">
+               <section class="features clearfix">
+                   <div class="features__right-column">
+                       <h2 class="features__title">Поднимает настроение</h2>
+                       <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                       <h2 class="features__title">Меняет мир вокруг</h2>
+                       <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                       <h2 class="features__title">Заводит новых друзей</h2>
+                       <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                   </div>
+                   <div class="features__left-column">   
+                       <img class="features__img_1" src="/pink/pict/main-iphone-smile700.png" alt="#">
+                       <img class="features__img_2" src="/pink/pict/main-iphone-smile.png" alt="#">
+                   </div>
                </section>
+               
+               <article class='effect clearfix'>
+                  <div class="effect__left-column">    
+                      <img src="/pink/pict/main-effect-24.png" alt="">
+                  </div>
+                  <div class="effect__right-column">
+                      <h2>Эффект на 24 часа!</h2>
+                      <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                      <a href="">Узнать больше об исследовании</a>
+                  </div>
+                   
+               </article>
 
                <article class='reviews'>
                    <div class="reviews__slide">
-                       <h2 class="reviews__title">Николай Петров</h2>
+                       <h2 class="reviews__title">Николай Петров<br><small>25 лет, водитель трамвая</small></h2>
                        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                    </div>
                    <div class="pagination">
@@ -82,24 +99,28 @@
                <div class="box-content">
                    <table class="box-content__table">
                        <tr class="box-content__row-1">
-                           <th>1</th>
+                           <th class='empty'></th>
+                           <th>База<br><span> 2.99 USD</span></th>
                            <th class="box-content__th--top">Стандарт<br><span> 3.99 USD</span></th>
-                           <th>3</th>
+                           <th>Анлим<br><span> 6.99 USD</span></th>
                        </tr>
                        <tr class="box-content__row-2">
-                           <td>2,1</td>
                            <td>Розовый фильтр</td>
-                           <td>2,3</td>
+                           <td class='box-content__td--no-exist'><span>Розовый фильтр 2,1</span></td>
+                           <td><span>Розовый фильтр</span></td>
+                           <td><span>Розовый фильтр 2,3</span></td>
                        </tr>
                        <tr class="box-content__row-3">
-                           <td>2,1</td>
                            <td>Смайлики</td>
-                           <td>2,1</td>
+                           <td><span>Смайлики 2,1</span></td>
+                           <td><span>Смайлики</span></td>
+                           <td><span>Смайлики 2,1</span></td>
                        </tr>
                        <tr class="box-content__row-4">
-                           <td>2,1</td>
-                           <td class='box-content__td--no-exist'>Комментарии</td>
-                           <td>2,1</td>
+                           <td>Комментарии</td>
+                           <td><span>Комментарии 2,1</span></td>
+                           <td class='box-content__td--no-exist'><span>Комментарии</span></td>
+                           <td class='box-content__td--no-exist'><span>Комментарии 2,1</span></td>
                        </tr>
                    </table>
                    <div class='move-table  pagination'>
@@ -115,11 +136,24 @@
        
        <footer class="page-footer">
            <div class='inner'>
-               <p class="page-footer__contact">Остались вопросы? Свяжитесь с нами.</p>
+               <p class="page-footer__contact">Остались вопросы?<br> Свяжитесь с нами.</p>
                <p class="page-footer__telephone">Звоните:<a href="#">0 800 500 300</a></p>
                <p class="page-footer__email">Пишите:<a href="#">lolkokpol@gmail.com</a></p>
                <p class="page-footer__adress">Приезжайте в гости:<a href="#">Санкт-Петербург ул.Невский проспект Д20</a></p>
-               <img src="/pink/img/images/footer-map-sliced.jpg" alt="">
+               <img src="/pink/img/images/footer-map-sliced-700.jpg" alt="">
+               <img src="/pink/img/images/footer-map-sliced.jpg" alt="">     
+               <div class="social clearfix">
+                   <a href="#" class="social__logo"></a>
+                   <div class="social__buttons">
+                       <a href="#" class="social_buttons--tw"></a>
+                       <a href="#" class="social_buttons--fb"></a>
+                       <a href="#" class="social_buttons--play"></a>
+                   </div>
+                   <div class="social__developers">
+                       <a href="#" class="social__developers--aa">Website by</a>
+                       <a href="#" class="social__developers--htmlacademy">for</a>
+                   </div>
+               </div>   
            </div>
        </footer>
         
