@@ -11,7 +11,7 @@ body {
 .inner {
     max-width: 660px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2%; /* 0 20 */
 /*     border: 1px solid red; */
 }
 
@@ -32,25 +32,34 @@ main {
     margin-bottom: 100px;
     &__right-column {
         float: right;
-        width: 350px;
-        margin-top: 70px;
+        width: 50%; /* 350 */
+        margin-top: 40px;
     }
     &__left-column {
+        width: 38.5%; /* 270 */
         float: left;
-        height: 480px;
-        overflow: hidden;
+        height: 460px;
+        img {
+            max-width: 100%;
+        }
     }
 }
 
 .effect {
     &__left-column {
         float: left;
+        width: 38.5%;
+        height: auto;
+        img {
+            max-width: 100%;
+        }
     }
     &__right-column {
         float:right;
-        width: 310px;
+        width: 50%; /* 310 */
     }
 }
+
 
 .page-footer {
     &__telephone,

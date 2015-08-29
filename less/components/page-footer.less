@@ -16,6 +16,9 @@
         font-weight: @font-bold;
         vertical-align: top;
     }
+    &__email {
+        word-wrap: break-word; /* спірний момент */
+    }
     &__adress{
         width: 40%;
         margin: 0 auto;
@@ -32,6 +35,7 @@
         line-height: @line-height-h2;
     }
     img {
+        max-width: 100%;
         margin-left: -20px;
     }
     img:nth-of-type(2) {
@@ -46,19 +50,19 @@
             width: 145px;
             height: 40px;
             background: url("/pink/img/Pink-logo-footer-2@1x.png") no-repeat 0 0;
-            margin-left: 20px;
-            margin-right: 70px;
+            margin-left: 2.8%; /* 20  */
+            margin-right: 10%; /* 70 */
         }
         &__buttons {
             float:left;
-            margin-right: 30px;
+            margin-right: 4.3%; /* 30 */
             a {
                 display: inline-block;
                 width: 45px;
                 height: 45px;
                 border: 3px solid  #e9ebec;
                 border-radius: 50%;
-                margin-right: 8px;
+                margin-right: 8px; /* 8 */
             }
             a:hover {
                 border-color: @bg-darkblue;

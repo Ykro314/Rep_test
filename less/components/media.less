@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (max-width: 340px) {
     
     .page-header {
         background-image: 
@@ -71,12 +71,14 @@
             }
         }
     }
+    
     .box-content {
+        overflow: hidden;
        /*  overflow: hidden; можливо треба додати в боді, можливо і зовсім не потрібно. Все одно за вьюпорт не вилізе, а слайдер буде працювати за рахунок переміщення position:relative */
         &__table {
             width: 860px;
             position: relative;
-            left:-330px;
+            left: -285px;  /* -330px; */
             th {
                 width: 276px;
             }
@@ -118,10 +120,54 @@
             display: none;
         }
         img:nth-of-type(2) {
-            display: block;
+            display: inline;
         }
         .social {
             display: none;
         }
     }
 }
+
+@media (max-width: 675px) {
+    .page-footer {
+        .social {
+            &__logo {
+                display: inline-block;
+                width: 40%;
+            }
+            &__buttons {
+                width:40%;
+                display: inline-block;
+            }
+            &__developers {
+                margin-top: 20px;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+} 
+@media (max-width: 500px) {
+    .page-footer {
+        text-align: center;
+        .social {
+            &__logo {
+                margin-left: -5px;
+                background-position: 50% 0;
+                width: 100%;
+                float: none;
+                display: block;
+                margin-bottom: 20px;
+            }
+            &__buttons {
+                width: 100%;
+                float: none;
+                display: block;
+            }
+            &__developers {
+                float: none;
+                display: block;
+            }
+        }
+    }
+} 

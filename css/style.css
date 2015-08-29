@@ -25,7 +25,8 @@ body {
 .inner {
   max-width: 660px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2%;
+  /* 0 20 */
   /*     border: 1px solid red; */
 }
 main {
@@ -44,20 +45,31 @@ main {
 }
 .features__right-column {
   float: right;
-  width: 350px;
-  margin-top: 70px;
+  width: 50%;
+  /* 350 */
+  margin-top: 40px;
 }
 .features__left-column {
+  width: 38.5%;
+  /* 270 */
   float: left;
-  height: 480px;
-  overflow: hidden;
+  height: 460px;
+}
+.features__left-column img {
+  max-width: 100%;
 }
 .effect__left-column {
   float: left;
+  width: 38.5%;
+  height: auto;
+}
+.effect__left-column img {
+  max-width: 100%;
 }
 .effect__right-column {
   float: right;
-  width: 310px;
+  width: 50%;
+  /* 310 */
 }
 .page-footer__telephone,
 .page-footer__email {
@@ -68,6 +80,7 @@ main {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #1d2631;
+  /*  background-size: contain; */
   color: white;
   padding-bottom: 100px;
 }
@@ -116,6 +129,7 @@ main {
   text-align: center;
   font-size: 40px;
   line-height: 50px;
+  text-shadow: 1px 1px 0 #283645;
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -176,6 +190,7 @@ main > .inner > p:nth-child(2) {
 }
 .effect h2 {
   width: 180px;
+  /* 180 */
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
@@ -242,14 +257,14 @@ main > .inner > p:nth-child(2) {
 }
 .box-content__table {
   border-collapse: collapse;
-  width: 615px;
+  width: 100%;
   margin-bottom: 35px;
-  margin-left: 20px;
   /*    position: relative;
+        
         left:-290px; */
 }
 .box-content__table th {
-  width: 153px;
+  width: 25%;
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
@@ -352,6 +367,10 @@ box-content {
   font-weight: bold;
   vertical-align: top;
 }
+.page-footer__email {
+  word-wrap: break-word;
+  /* спірний момент */
+}
 .page-footer__adress {
   width: 40%;
   margin: 0 auto;
@@ -368,6 +387,7 @@ box-content {
   line-height: 30px;
 }
 .page-footer img {
+  max-width: 100%;
   margin-left: -20px;
 }
 .page-footer img:nth-of-type(2) {
@@ -382,12 +402,15 @@ box-content {
   width: 145px;
   height: 40px;
   background: url("/pink/img/Pink-logo-footer-2@1x.png") no-repeat 0 0;
-  margin-left: 20px;
-  margin-right: 70px;
+  margin-left: 2.8%;
+  /* 20  */
+  margin-right: 10%;
+  /* 70 */
 }
 .page-footer .social__buttons {
   float: left;
-  margin-right: 30px;
+  margin-right: 4.3%;
+  /* 30 */
 }
 .page-footer .social__buttons a {
   display: inline-block;
@@ -396,6 +419,7 @@ box-content {
   border: 3px solid  #e9ebec;
   border-radius: 50%;
   margin-right: 8px;
+  /* 8 */
 }
 .page-footer .social__buttons a:hover {
   border-color: #283645;
@@ -426,7 +450,7 @@ box-content {
 .page-footer .social__developers .social__developers--htmlacademy {
   background: url("/pink/img/htmlacademy.svg") no-repeat 95% 50%;
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .page-header {
     background-image: url("/pink/img/main-bg_second-layer24.png"), url("/pink/img/main-bg-1.png");
     background-repeat: no-repeat no-repeat;
@@ -485,12 +509,14 @@ box-content {
     display: none;
   }
   .box-content {
+    overflow: hidden;
     /*  overflow: hidden; можливо треба додати в боді, можливо і зовсім не потрібно. Все одно за вьюпорт не вилізе, а слайдер буде працювати за рахунок переміщення position:relative */
   }
   .box-content__table {
     width: 860px;
     position: relative;
-    left: -330px;
+    left: -285px;
+    /* -330px; */
   }
   .box-content__table th {
     width: 276px;
@@ -529,9 +555,46 @@ box-content {
     display: none;
   }
   .page-footer img:nth-of-type(2) {
-    display: block;
+    display: inline;
   }
   .page-footer .social {
     display: none;
+  }
+}
+@media (max-width: 675px) {
+  .page-footer .social__logo {
+    display: inline-block;
+    width: 40%;
+  }
+  .page-footer .social__buttons {
+    width: 40%;
+    display: inline-block;
+  }
+  .page-footer .social__developers {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .page-footer {
+    text-align: center;
+  }
+  .page-footer .social__logo {
+    margin-left: -5px;
+    background-position: 50% 0;
+    width: 100%;
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .page-footer .social__buttons {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .page-footer .social__developers {
+    float: none;
+    display: block;
   }
 }
