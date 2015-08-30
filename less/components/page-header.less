@@ -4,7 +4,7 @@
 //        url("/pink/img/main-bg-1.png");
 //    background-repeat: no-repeat no-repeat;
 //    background-position: 50% 173px, 50% 0;
-    background-image: url('/pink/img/main-bg-all-700.jpg');
+    background-image: url('/pink/img/main-bg-all-1440.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-color: #1d2631;
@@ -15,43 +15,71 @@
     &__menu {
         padding: 40px 0;
         background: 
-            url("/pink/img/main-top_bg700_opacity.png") no-repeat 50% 0;
+            url("/pink/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
     }
-        a {
-            display: block;
-        }
-        .logo {
-            float:left;
-            font-size: 32px;
+    a {
+        display: block;
+    }
+    .logo {
+        float:left;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        padding-left: 65px;
+        background: url("/pink/img/glasses-1200_24@1x.png") no-repeat 0 0;
+    }
+    &__main-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        width: 80%;
+        li {
+            text-align: center;
+            display: inline-block;
+            font-size: @font-size-h2;
             line-height: 40px;
-            text-transform: uppercase;
-            padding-left: 65px;
-            background: url("/pink/img/glasses-simple@1x.png") no-repeat 0 0;
+            margin-left: -4px;
+            /* width: 25%; знизу костиль, але робочий*/
         }
-        .logo~a {
-            float:right;
-            width: 50px;
-            height: 4px;
-            background-color: white;
-            position: relative;
-            margin-top: 3px;
+        li:nth-child(1) {
+            width: 27.5%;
         }
-        .logo~a:after {
-            content: '';
-            width: 50px;
-            height: 4px;
-            background: white;
-            position: absolute;
-            top:10px; 
+        li:nth-child(2) {
+            width: 27.5%;
         }
-        .logo~a:before {
-            content: '';
-            width: 50px;
-            height: 4px;
-            background-color: white;
-            position: absolute;
-            top:20px; 
+        li:nth-child(3) {
+            width: 20%;
         }
+        li:nth-child(4) {
+            width: 25%;
+        }
+    }
+    .logo~a {
+        float:right;
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        position: relative;
+        margin-top: 3px;
+        display: none;
+    }
+    .logo~a:after {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: white;
+        position: absolute;
+        top:10px; 
+    }
+    .logo~a:before {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        position: absolute;
+        top:20px; 
+    }
     
 //    &__left-column{ /* це мало бути в гріді */
 //        width: 310px;
@@ -66,8 +94,7 @@
 //        font-size: @font-size-label;
 //        line-height: 30px;
         font-weight: 300;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
 //        margin-bottom: 365px;
         min-height: 60px;
     }
@@ -81,11 +108,11 @@
         padding: 15px 35px;
         border: 3px solid white;
         border-radius: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     .support {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 60px;
     }
     .support img {
         margin-right: 35px;

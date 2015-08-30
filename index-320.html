@@ -16,6 +16,12 @@
                    <div class='inner'>
                        <a href="#" class="logo">Pink</a>
                        <a href="#"></a>
+                       <ul class="page-header__main-menu">
+                           <li><a href="#">Информация</a></li>
+                           <li><a href="#">Возможности</a></li>
+                           <li><a href="#">Отзывы</a></li>
+                           <li><a href="#">Стоимость</a></li>
+                       </ul>
                    </div>
                </div>
                <div class="inner">
@@ -60,12 +66,21 @@
                <p>Нам есть что вам предложить!</p>
                <section class="features clearfix">
                    <div class="features__right-column">
-                       <h2 class="features__title">Поднимает настроение</h2>
-                       <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-                       <h2 class="features__title">Меняет мир вокруг</h2>
-                       <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                       <h2 class="features__title">Заводит новых друзей</h2>
-                       <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                       <div class="features__inline-column">
+                           <img src="/pink/pict/main-iphone-black_white-1200.jpg" alt="">
+                           <h2 class="features__title">Поднимает настроение</h2>
+                           <p class="features__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                       </div>
+                       <div class="features__inline-column">
+                           <img src="/pink/pict/main-iphone-red-1200.jpg" alt="">
+                           <h2 class="features__title">Меняет мир вокруг</h2>
+                           <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                       </div>
+                       <div class="features__inline-column">
+                           <img src="/pink/pict/main-iphone-smile-1200.jpg" alt="">
+                           <h2 class="features__title">Заводит новых друзей</h2>
+                           <p class="features__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                       </div>
                    </div>
                    <div class="features__left-column">   
                        <img class="features__img_1" src="/pink/pict/main-iphone-smile700.png" alt="#">
@@ -75,7 +90,12 @@
                
                <article class='effect clearfix'>
                   <div class="effect__left-column">    
-                      <img src="/pink/pict/main-effect-24.png" alt="" width='270'>
+                      <picture>
+                          <source 
+                              media="(min-width:700px)" 
+                              srcset="/pink/pict/main-effect-24-1200.png">
+                          <img src="/pink/pict/main-effect-24.png" alt="" width='270'>
+                      </picture>
                   </div>
                   <div class="effect__right-column">
                       <h2>Эффект на 24 часа!</h2>
@@ -86,6 +106,7 @@
                </article>
 
                <article class='reviews'>
+                   <img src="/pink/pict/main-icon_quotes.png" alt="">
                    <div class="reviews__slide">
                        <h2 class="reviews__title">Николай Петров<br><small>25 лет, водитель трамвая</small></h2>
                        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -141,8 +162,16 @@
                <p class="page-footer__telephone">Звоните:<a href="#">0 800 500 300</a></p>
                <p class="page-footer__email">Пишите:<a href="#">lolkokpol@gmail.com</a></p>
                <p class="page-footer__adress">Приезжайте в гости:<a href="#">Санкт-Петербург ул.Невский проспект Д20</a></p>
-               <img src="/pink/img/images/footer-map-sliced-700.jpg" alt="" width='700'>
-               <img src="/pink/img/images/footer-map-sliced.jpg" alt="">     
+           </div>
+               <picture>
+                   <source media="(min-width:1200px)" srcset="/pink/img/images/footer-map-sliced-1440.jpg">
+                <source media="(min-width:700px)" srcset="/pink/img/images/footer-map-sliced-1200.jpg">
+                   <source media="(min-width:340px) and (max-width:1200px)" srcset="/pink/img/images/footer-map-sliced-700.jpg">
+                   <img src="/pink/img/images/footer-map-sliced.jpg" alt="">
+               </picture>
+               <!-- <img src="/pink/img/images/footer-map-sliced-700.jpg" alt="" width='700'>
+               <img src="/pink/img/images/footer-map-sliced.jpg" alt="">      -->
+            <div class="inner">
                <div class="social clearfix">
                    <a href="#" class="social__logo"></a>
                    <div class="social__buttons">
