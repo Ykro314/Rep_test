@@ -17,6 +17,14 @@
     }
     &__email {
         word-wrap: break-word; /* спірний момент */
+        a:hover {
+            color: @bg-darkblue;
+            text-decoration: underline; 
+            transition: 0.2s all;
+        }
+        a:active {
+            opacity: @opacity-active;
+        }
     }
     &__adress{
         margin-bottom: 40px;
@@ -55,6 +63,13 @@
             /*
             margin-right: 10%; /* 70 */
         }
+        &__logo:hover {
+            background-image: url("/pink/img/glasses-footer-hover@1x.png");
+            transition: 0.3s all;
+        }
+        &__logo:active {
+             opacity: @opacity-active;
+        }
         &__buttons {
             width: 30%;
             float:left;
@@ -70,6 +85,11 @@
             }
             a:hover {
                 border-color: @bg-darkblue;
+                transition: 0.2s all;
+            }
+            a:active {
+                border: 3px solid  #e9ebec;
+                opacity: @opacity-active;
             }
             .social_buttons--tw{
                 background: url("/pink/img/footer-social-icon-tw.png") no-repeat 50% 50%;
@@ -93,8 +113,11 @@
                 padding-right: 40px;
                 margin-right: 10px;
             }
+            a:active {
+                opacity: @opacity-active;
+            }
             .social__developers--aa {
-                background: url("/pink/img/glukhanko.svg") no-repeat 95% 50%;
+                background: url("/pink/img/glukhanko.svg") no-repeat 95% 50% ;
             }
             .social__developers--htmlacademy {
                 background: url("/pink/img/htmlacademy.svg") no-repeat 95% 50%;

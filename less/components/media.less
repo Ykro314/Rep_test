@@ -10,12 +10,61 @@
 
 
 @media (max-width: 810px) {
-    .page-header {
+//    включатель іконки мобільного меню
+     .page-header {
         &__main-menu {
             display: none;
         }
-        .logo~a {
+        .menu-open {
             display: block;
+        }
+    } 
+    
+//        розмітка самого мобільного меню, працює через модифікатор active
+    .page-header {
+        position: relative;
+        &__menu--active {
+            background-image: none;
+            background-color: @bg-darkblue;
+            border-bottom: 1px solid black;
+            .menu-open {
+                display: none;
+            }
+            .menu-close {
+                display: block;
+            }
+        }
+        &__main-menu--active {
+            width: 102%;
+            display: block;
+            text-align: center;
+            position: absolute;
+            top:110px;
+            left:0;
+            li {
+                text-align: center;
+                display: block;
+                border-top: 1px solid #485360;
+                border-bottom: 1px solid black;
+                background: @bg-darkblue;
+                a:hover {
+                    color: @color-footer;
+                    box-shadow: none;
+                }
+                a:active {
+                    opacity: @opacity-active;
+                }
+            }
+            a {
+                font-weight: @font-bold;
+                padding: 13px 0;
+            }
+            li:nth-child(1),
+            li:nth-child(2),
+            li:nth-child(3),
+            li:nth-child(4){
+                width: 100%;
+            }
         }
     }
     
@@ -87,6 +136,9 @@
         background-image: url("/pink/img/main-bg-all-700.jpg");
         &__menu {
             background-image: url("/pink/img/main-top_bg700_opacity.png");
+        }
+        &__menu--active {
+            background-image: none;
         }
         .logo {
             background-image: url("/pink/img/glasses-simple@1x.png");
@@ -193,10 +245,21 @@
         background:
             url("/pink/img/main-top_bg_opacity.png") no-repeat 50% 0;
         }
+        &__menu--active {
+            background-image: none;
+            background-color: @bg-darkblue;
+        }
+        &__main-menu {
+            top: 66px;
+        }
          .logo {
             padding-left: 0px;
              background: none;
             }
+        .logo:hover {
+            background: none;
+            color: @color-footer;
+        }
         &__left-column{
             width: auto;
             margin-top: 0;

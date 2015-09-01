@@ -12,11 +12,12 @@
     <body>
        
        <header class="page-header">
-               <div class="page-header__menu clearfix">
+               <div class="page-header__menu page-header__menu--activ clearfix">
                    <div class='inner'>
                        <a href="#" class="logo">Pink</a>
-                       <a href="#"></a>
-                       <ul class="page-header__main-menu">
+                       <a href="#" class="menu-open"></a>
+                       <a href="#" class="menu-close"></a>
+                       <ul class="page-header__main-menu page-header__main-menu--activ">
                            <li><a href="#">Информация</a></li>
                            <li><a href="#">Возможности</a></li>
                            <li><a href="#">Отзывы</a></li>
@@ -186,6 +187,28 @@
                </div>   
            </div>
        </footer>
+        
+        
+        
+        <script>
+            var open = document.querySelector('.menu-open');
+            var top_menu = document.querySelector('.page-header__menu');
+            var mobile_menu = document.querySelector('.page-header__main-menu');
+            var close = document.querySelector('.menu-close');
+            
+            open.addEventListener('click', function(event){
+                event.preventDefault();
+                top_menu.classList.add('page-header__menu--active');
+                mobile_menu.classList.add('page-header__main-menu--active');
+                console.log("its");
+            }, false);
+            
+            close.addEventListener('click', function(event){
+                event.preventDefault();
+                top_menu.classList.remove('page-header__menu--active');
+                mobile_menu.classList.remove('page-header__main-menu--active');
+            }, false);
+        </script>
         
     </body>
 </html>
