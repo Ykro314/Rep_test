@@ -94,7 +94,7 @@ main {
   display: inline-block;
 }
 .page-header {
-  background-image: url('/img/main-bg-all-1440.jpg');
+  background-image: url("img/main-bg-all-1440.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #1d2631;
@@ -104,7 +104,7 @@ main {
 }
 .page-header__menu {
   padding: 40px 0;
-  background: url("/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
+  background: url("img/main-top_bg1440_opacity.png") no-repeat 50% 0;
 }
 .page-header a {
   display: block;
@@ -118,7 +118,7 @@ main {
   background: url("img/glasses-1200_24@1x.png") no-repeat 0 0;
 }
 .page-header .logo:hover {
-  background-image: url("/img/glasses-hover@1x.png");
+  background-image: url("img/glasses-hover@1x.png");
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
 }
@@ -201,7 +201,7 @@ main {
   display: none;
 }
 .page-header .menu-close:hover {
-  background-image: url("/pink/img/header-icon-menu_close-hover.png");
+  background-image: url("img/header-icon-menu_close-hover.png");
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
 }
