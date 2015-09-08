@@ -827,7 +827,8 @@ box-content {
     display: block;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 450px) {
+  /* 340 */
   .page-header {
     background-image: url("/pink/img/main-bg_second-layer24.png"), url("/pink/img/main-bg-1.png");
     background-repeat: no-repeat no-repeat;
