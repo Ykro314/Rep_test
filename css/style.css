@@ -104,7 +104,7 @@ main {
 }
 .page-header__menu {
   padding: 40px 0;
-  background: url("Rep_test/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
+  background: url("/Rep_test/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
 }
 .page-header a {
   display: block;
@@ -115,10 +115,10 @@ main {
   line-height: 40px;
   text-transform: uppercase;
   padding-left: 65px;
-  background: url("img/glasses-1200_24@1x.png") no-repeat 0 0;
+  background: url("/Rep_test/img/glasses-1200_24@1x.png") no-repeat 0 0;
 }
 .page-header .logo:hover {
-  background-image: url("img/glasses-hover@1x.png");
+  background-image: url("/Rep_test/img/glasses-hover@1x.png");
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
 }
@@ -197,11 +197,11 @@ main {
   float: right;
   width: 50px;
   height: 40px;
-  background: url("img/header-icon-menu_close.png") no-repeat 50% 50%;
+  background: url("/Rep_test/img/header-icon-menu_close.png") no-repeat 50% 50%;
   display: none;
 }
 .page-header .menu-close:hover {
-  background-image: url("img/header-icon-menu_close-hover.png");
+  background-image: url("/Rep_test/img/header-icon-menu_close-hover.png");
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
 }
