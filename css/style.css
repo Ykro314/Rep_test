@@ -94,7 +94,7 @@ main {
   display: inline-block;
 }
 .page-header {
-  background-image: url('/pink/img/main-bg-all-1440.jpg');
+  background-image: url('img/main-bg-all-1440.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #1d2631;
@@ -104,7 +104,7 @@ main {
 }
 .page-header__menu {
   padding: 40px 0;
-  background: url("/pink/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
+  background: url("img/main-top_bg1440_opacity.png") no-repeat 50% 0;
 }
 .page-header a {
   display: block;
