@@ -104,7 +104,7 @@ main {
 }
 .page-header__menu {
   padding: 40px 0;
-  background: url("/Rep_test/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
+  background: url("/img/main-top_bg1440_opacity.png") no-repeat 50% 0;
 }
 .page-header a {
   display: block;
@@ -635,7 +635,7 @@ box-content {
     background-image: url("/Rep_test/img/main-bg-all-1200.jpg");
   }
   .page-header__menu {
-    background-image: url("/Rep_testk/img/main-top_bg1200_opacity.png");
+    background-image: url("/Rep_test/img/main-top_bg1200_opacity.png");
   }
 }
 @media (max-width: 810px) {
