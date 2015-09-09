@@ -603,10 +603,10 @@ box-content {
   background: url("/Rep_test/img/footer-social-icon-tw.png") no-repeat 50% 50%;
 }
 .page-footer .social__buttons .social_buttons--fb {
-  background: url("/Rep_test/footer-social-icon-fb.png") no-repeat 50% 50%;
+  background: url("/Rep_test/img/footer-social-icon-fb.png") no-repeat 50% 50%;
 }
 .page-footer .social__buttons .social_buttons--play {
-  background: url("/Rep_test/footer-social-icon-play.png") no-repeat 50% 50%;
+  background: url("/Rep_test/img/footer-social-icon-play.png") no-repeat 50% 50%;
 }
 .page-footer .social__developers {
   width: 30%;
@@ -904,6 +904,7 @@ box-content {
     display: none;
   }
   .box-content {
+    display: none;
     overflow: hidden;
     /*  overflow: hidden; можливо треба додати в боді, можливо і зовсім не потрібно. Все одно за вьюпорт не вилізе, а слайдер буде працювати за рахунок переміщення position:relative */
   }
